@@ -28,9 +28,10 @@ kits available:
 
 Install the following:
 
-* Arduino IDE
-* NodeJS
-* Clone this repo
+* [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+* [NodeJS](nodejs.org)
+* Clone this repo and install npm modules
+* Install the drivers from the [Drivers folder](/drivers) for your system (OSX / Win only).
 
 ```
 git clone git@github.com:ajfisher/dddworkshop.git && cd dddworkshop
