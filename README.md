@@ -28,14 +28,49 @@ kits available:
 
 Install the following:
 
-* Arduino IDE
-* NodeJS
-* Clone this repo
+* [Arduino IDE](http://arduino.cc)
+* [NodeJS](http://nodejs.org)
+
+Clone this repo and install dependencies:
 
 ```
 git clone git@github.com:ajfisher/dddworkshop.git && cd dddworkshop
 npm install
 ```
+
+If you're on Mac or Windows, you'll need to install the drivers for the arduino
+board you are using. [They are in the drivers folder](/drivers).
+
+## Repo layout
+
+In this repository are several examples to compliment the workshop. There are 
+three major areas:
+
+* Hello, Hardware World
+* Information Radiators
+* Physical Sensors
+
+Each of these folders contains sections underneath them specific to the 
+example being used as illustrated below;
+
+```
+|--- 1_hello_world
+|  
+|--- 2_info_radiator
+|  |--- twitter
+|  |--- gmail
+|  |--- weather
+|  |--- offline
+|
+|--- 3_sensors
+|  |--- temperature
+|  |--- light
+```
+
+Within each example is a `README` file which will contain the steps you need
+to follow to replicate the example including the circuit diagram. From there
+you can then run the appropriate example code as indicated in the `README`
+
 
 ## To be continued
 
