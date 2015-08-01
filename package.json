@@ -1,0 +1,28 @@
+{
+  "name": "dddworkshop",
+  "version": "1.0.0",
+  "description": "Exercises for DDD JSIOT Workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajfisher/dddworkshop.git"
+  },
+  "keywords": [
+    "johnny",
+    "five",
+    "iot",
+    "nodebots"
+  ],
+  "author": "Andrew Fisher <ajfisher.td@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajfisher/dddworkshop/issues"
+  },
+  "homepage": "https://github.com/ajfisher/dddworkshop#readme",
+  "dependencies": {
+    "johnny-five": "^0.8.85"
+  }
+}
