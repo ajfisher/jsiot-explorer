@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/ajfisher/dddworkshop#readme",
   "dependencies": {
+    "google-auth-library": "^0.9.6",
+    "googleapis": "^2.1.3",
     "johnny-five": "^0.8.85"
   }
 }
