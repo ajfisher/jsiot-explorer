@@ -38,7 +38,7 @@ The circuit is given below. Things to note:
 * Servo red wire = 5V
 * Servo yellow / orange wire is signal (pin 9)
 
-![](gmail.png)
+![](gmail.svg)
 
 
 ## Running the code

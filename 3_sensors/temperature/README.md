@@ -43,7 +43,7 @@ Make sure you leave phant running while you're acquiring data!
 Build the circuit as indicated below. Note that you need a 2KΩ resistor so you
 can use 2x1KΩ resistors in series (series resistors are additive) instead.
 
-![](temperature.png)
+![](temperature.svg)
 
 ## Run the code
 
