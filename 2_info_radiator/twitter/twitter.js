@@ -1,7 +1,7 @@
 var five = require("johnny-five");
 var Twitter = require("twitter");
 
-var twitter_creds = require ("./access_af.js");
+var twitter_creds = require ("./access.js");
 var board = new five.Board();
 var led;
 var keyword = "robot";
