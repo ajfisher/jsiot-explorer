@@ -14,12 +14,21 @@ coming up for the forecast that is relevant.
 |---|-------------------|
 | 1 | Arduino           |
 | 1 | RGB LED           |
-| 6 | Jumper wires      |
+| 4 | Jumper wires      |
 | 3 | 220Ω Resistors    |
 
 ## Circuit set up.
 
+Set up the circuit using the diagram below. Things to note:
 
+* the "long" leg is the cathode and should go to ground. 
+* If you look for the "flat" side of the LED head the pin on that side is the 
+red one.
+
+![](weather.png)
+
+The resistors on this circuit are Red, Red, Black, Black, Brown or Red, Red, 
+Brown, Gold.
 
 ## Running the application
 
