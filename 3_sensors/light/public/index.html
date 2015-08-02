@@ -21,6 +21,7 @@
             var lightchart = $('#area').epoch({
                 type: 'time.line',
                 data: data,
+                range: [0, 1023],
                 ticks: {time: 5, right: 5, left: 5},
                 pixelRatio: 1,
                 axes: ['left', 'right', 'bottom']
@@ -28,16 +29,9 @@
 
             var socket = io.connect();
             socket.on("data", function(data) {
+                console.log(data.dp);
                 lightchart.push(data.dp);
             });
-
-            /**setInterval(function() {
-                var dp = [{
-                    time: (new Date()).getTime() / 1000,
-                    y: (22+(Math.random() * (5 - -5) + -5)),
-                }];
-                lightchart.push(dp);
-            }, 1000)**/
 
         </script>
     </body>

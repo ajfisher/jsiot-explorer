@@ -1,14 +1,12 @@
+var five = require("johnny-five");
+
 // web server elements
 var express = require('express');
 var app = express();
 var http = require('http');
 var server = http.createServer(app);
-var board;
+var board, lightsensor;
 
-//
-//
-// Set up the application server
-//
 var port = 8001;
 
 server.listen(port);
@@ -23,13 +21,27 @@ console.log("MESSAGE: Web server now listening on http://localhost:%s", port);
 // Set up Socket IO
 var io = require('socket.io').listen(server);
 
+// handler for when connection comes in.
 io.sockets.on("connection", function(socket) {
 
-    setInterval(function() {
-        var dp = [{
-            time: (new Date()).getTime() / 1000,
-            y: (Math.random() * (1023)),
-        }];
-        socket.emit("data", {dp: dp});
-    }.bind(this), 1000)
+    if (board.isReady) {
+        lightsensor.on("data", function(err, value) {
+            var dp = [{
+                time: (new Date()).getTime() / 1000,
+                y: value,
+            }];
+            console.log(dp);
+            socket.emit("data", {dp: dp});
+        });
+    }
 });
+
+board = new five.Board();
+board.on("ready", function() {
+    
+    lightsensor = new five.Sensor({
+        pin: "A0",
+        freq: 1000,
+    });
+});
+
