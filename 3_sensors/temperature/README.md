@@ -11,7 +11,7 @@ from sensors.
 |---|-------------------|
 | 1 | Arduino           |
 | 1 | LM335 temp sensor |
-| 4 | Jumper wires      |
+| 3 | Jumper wires      |
 | 2 | 1KΩ Resistors     |
 
 ## Configure phant
@@ -31,12 +31,19 @@ Go to http://localhost:8080 and select "Create a Data Stream"
 Fill in the field, using `temp` as the element for `fields` and then hit save.
 
 You'll then get a screen with all of your pertinent information. Keep this to
-hand but also save your keys file as `access_keys` as 
-`3_sensors/temperature/access_keys.json`.
+hand but also save your keys file as `3_sensors/temperature/access_keys.json`.
+
+Once this is complete, you can build the circuit and then start pushing data
+to Phant. 
+
+Make sure you leave phant running while you're acquiring data!
 
 ## Build the circuit
 
-TODO: Add the circuit diagram.
+Build the circuit as indicated below. Note that you need a 2KΩ resistor so you
+can use 2x1KΩ resistors in series (series resistors are additive) instead.
+
+![](temperature.png)
 
 ## Run the code
 
@@ -52,7 +59,8 @@ fingers on the sensor it should get warmer and you should see the data go up.
 If you look at the [phant stream](http://localhost:8080/streams) and then select
 your temperature logger, you should see the data in there.
 
+## Going further
 
-
-
+* Use the temperature to change the colour of a light
+* Create a heatmap of your environment with multiple temperature sensors
 
