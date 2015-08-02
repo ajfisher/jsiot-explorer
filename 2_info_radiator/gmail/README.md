@@ -30,6 +30,19 @@ of installed application
 * Download the JSON file and put it in the `2_info_radiator/gmail` folder and call it
 `client_secret.json`
 
+## Circuit
+
+The circuit is given below. Things to note:
+
+* Servo brown wire = GND
+* Servo red wire = 5V
+* Servo yellow / orange wire is signal (pin 9)
+
+![](gmail.png)
+
+
+## Running the code
+
 Now you can run the application using:
 
 ```
@@ -39,6 +52,27 @@ node 2_info_radiator/gmail/gmail.js test
 This will go through an authentication process which you'll need to complete
 and from there should print out the number of emails you have in your inbox.
 
+You can centre your servo to 90° to stick your arrow on it using:
+
+```
+node 2_info_radiator/gmail/gmail.js centre
+```
+
+And finally, run the application using:
+
+```
+node 2_info_radiator/gmail/gmail.js
+```
+
+This will udpate every 10 seconds and check your current inbox status. If you
+send a big volume of emails to yourself you should see your inbox start to fill
+up and the arrow point to the area you consider "full".
+
+## Going further
+
+* Tweak the values to get a better gauge
+* Use an LED to alert you to a new email
+* Use the servo to hit a bell each time an email comes in.
 
 
 
