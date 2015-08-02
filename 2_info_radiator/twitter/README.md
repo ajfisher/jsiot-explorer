@@ -27,4 +27,26 @@ Agree to the terms and conditions.
 Open the file `2_info_radiator/twitter/access.js` and save your consumer keys
 and access tokens in there.
 
+## Build the circuit
+
+Build the circuit as given below.
+
+![](twitter.svg)
+
+## Run the code
+
+You can run the code by using the following:
+
+```
+node 2_info_radiator/twitter/twitter.js keyword
+```
+
+Where keyword is some search term you'd like to track. If you don't supply one
+then you'll get the default which is "robot".
+
+## Going further
+
+* Hook up an RGB LED and then pulse the different colours to different keywords
+* Count the occurrence of a keyword and then pulse the LED depending on the velocity
+
 
