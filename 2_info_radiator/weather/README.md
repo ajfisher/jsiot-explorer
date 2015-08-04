@@ -25,7 +25,7 @@ Set up the circuit using the diagram below. Things to note:
 * If you look for the "flat" side of the LED head the pin on that side is the 
 red one.
 
-![](weather.svg)
+![](weather.png)
 
 The resistors on this circuit are Red, Red, Black, Black, Brown or Red, Red, 
 Brown, Gold.

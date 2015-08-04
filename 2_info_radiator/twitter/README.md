@@ -31,7 +31,7 @@ and access tokens in there.
 
 Build the circuit as given below.
 
-![](twitter.svg)
+![](twitter.png)
 
 ## Run the code
 

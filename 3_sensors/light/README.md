@@ -18,7 +18,7 @@ stored, it's purely visual only.
 
 Build the circuit as per the diagram below:
 
-![](light_sensor.svg)
+![](light_sensor.png)
 
 Check that you have the right type of resistor (Brown, Black, Black, Red, Brown 
 if 5 bands or Brown, Black, Orange, Gold if 4 bands)

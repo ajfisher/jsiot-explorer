@@ -17,7 +17,7 @@ Take the LED and put the long leg in Pin 13 and the short leg in Ground.
 Ordinarily you need to use a resistor with the LED so you don't blow it up however
 Pin 13 has a resistor on it already so this makes your life easy.
 
-![](led.svg)
+![](led.png)
 
 ## Run the code
 
