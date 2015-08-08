@@ -1,6 +1,6 @@
 # DDD Workshop notes for NodeBots Session
 
-This repository will contain helpful information for installation and code
+This repository contains helpful information for installation and code
 examples for the NodeBots session. Note that in the session whilst we'll be working
 with some servos and some LEDs, we unfortunately won't be able to build full
 bots due to the time. 
@@ -17,21 +17,22 @@ actuate back into the real world.
 ## Equipment
 
 If you want to bring your own equipment then that is fine but we will have
-kits available:
+kits available. To follow the examples you'll need to have:
 
 * Arduino Uno or Nano.
-* LM355 or one-wire temperature sensor.
-* breadboard and jumper wire.
-* NeoPixel strip (min 8 pixels long).
+* LM355 or LM35 temperature sensor.
+* breadboard and jumper wires.
+* Standard Servo.
+* RGB and some standard LEDs.
 
 ## Installation
 
-Install the following:
+Before the session ensure you install the following:
 
 * [Arduino IDE](http://arduino.cc)
 * [NodeJS](http://nodejs.org)
 
-Clone this repo and install dependencies:
+Clone this repo and install node dependencies:
 
 ```
 git clone git@github.com:ajfisher/dddworkshop.git && cd dddworkshop
@@ -39,11 +40,14 @@ npm install
 ```
 
 If you're on Mac or Windows, you'll need to install the drivers for the arduino
-board you are using. [They are in the drivers folder](/drivers).
+board. [They are in the drivers folder](/drivers).
+
+If you're on Linux, you don't need to do anything - the kernel drivers are already
+there if you're using any kernal from the last several years.
 
 ## Repo layout
 
-In this repository are several examples to compliment the workshop. There are 
+In this repository are several examples that compliment the workshop. There are 
 three major areas:
 
 * Hello, Hardware World
