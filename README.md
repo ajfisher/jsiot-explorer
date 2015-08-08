@@ -71,7 +71,11 @@ Within each example is a `README` file which will contain the steps you need
 to follow to replicate the example including the circuit diagram. From there
 you can then run the appropriate example code as indicated in the `README`
 
+## Going further
 
-## To be continued
+* Get more API details about [johnny five](http://johnny-five.io)
+* Discover more about electronics via [Node ARDX](http://node-ardx.org)
+* If you got a Scientist Kit (the big one) [there is a dedicated repo](http://github.com/nodebotsau/scientist-kit)
+* Sign up to [NodeBots Nights](http://www.meetup.com/Melbourne-NodeBots-Nights/)
 
-More notes will be added here to support the workshop.
+
