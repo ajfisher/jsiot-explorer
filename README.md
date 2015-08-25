@@ -1,9 +1,7 @@
-# DDD Workshop notes for NodeBots Session
+# Javascript IoT workshop 
 
 This repository contains helpful information for installation and code
-examples for the NodeBots session. Note that in the session whilst we'll be working
-with some servos and some LEDs, we unfortunately won't be able to build full
-bots due to the time. 
+examples for the NodeBots IoT session. 
 
 ## Objective
 
@@ -12,18 +10,26 @@ The objective of this session is to achieve the following:
 * Develop an understanding of the nodebots / johnny-five hardware stack.
 * Have a dev environment fully capable of running that stack.
 * Develop a network enabled device that can interact with a web service and
-actuate back into the real world.
+actuate back in the real world.
 
 ## Equipment
 
-If you want to bring your own equipment then that is fine but we will have
-kits available. To follow the examples you'll need to have:
+There is a kit available for $20 that has been designed for this session which includes:
 
-* Arduino Uno or Nano.
-* LM355 or LM35 temperature sensor.
-* breadboard and jumper wires.
+* 1x Arduino Uno clone (CH340g USB-serial board).
+* 1x USB cable
+* 1x LM355 or LM35 temperature sensor.
+* 1x mini breadboard 
+* 10x jumper wires.
 * Standard Servo.
-* RGB and some standard LEDs.
+* 1x RGB LED
+* 2x Red LED, 2x Blue LED, 2x Green LED, 2x White LED, 2x Yellow LED
+* 5x 220Ω, 5x 1KΩ 5x 10KΩ Resistors
+* 1x photoresistor
+* 1x 9g mini-servo
+* Kit box
+
+Kits will also be available to play with during the session but you can't take them with you.
 
 ## Installation
 
