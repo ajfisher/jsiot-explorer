@@ -1,7 +1,8 @@
 # Javascript IoT workshop 
 
 This repository contains helpful information for installation and code
-examples for the NodeBots IoT session. 
+examples for the NodeBots IoT session. [There are some workshop slides
+that accompany this repository.](http://jsiot.ajf.io)
 
 ## Objective
 
