@@ -1,4 +1,4 @@
-# Javascript IoT workshop 
+# Javascript IoT Explorer
 
 This repository contains helpful information for installation and code
 examples for the NodeBots IoT session. [There are some workshop slides
@@ -20,7 +20,7 @@ There is a kit available for $20 that has been designed for this session which i
 * 1x Arduino Uno clone (CH340g USB-serial board).
 * 1x USB cable
 * 1x LM355 or LM35 temperature sensor.
-* 1x mini breadboard 
+* 1x mini breadboard
 * 10x jumper wires.
 * Standard Servo.
 * 1x RGB LED
@@ -30,19 +30,16 @@ There is a kit available for $20 that has been designed for this session which i
 * 1x 9g mini-servo
 * Kit box
 
-Kits will also be available to play with during the session but you can't take them with you.
-
 ## Installation
 
 Before the session ensure you install the following:
 
-* [Arduino IDE](http://arduino.cc)
 * [NodeJS](http://nodejs.org)
 
 Clone this repo and install node dependencies:
 
 ```
-git clone git@github.com:ajfisher/dddworkshop.git && cd dddworkshop
+git clone git@github.com:ajfisher/jsiot-explorer.git && cd jsiot-explorer
 npm install
 ```
 
@@ -52,21 +49,33 @@ board. [They are in the drivers folder](/drivers).
 If you're on Linux, you don't need to do anything - the kernel drivers are already
 there if you're using any kernal from the last several years.
 
+### Installing software to the Arduino
+
+You can use Interchange - which is like a package manager for arduino. Make sure
+`./node_modules/.bin` is on your `PATH` so you can execute binaries locally. Then
+simply plug in the arduino and do the following:
+
+```
+interchange install StandardFirmata -a uno
+```
+
+Assuming no errors, you're ready to start getting your code working.
+
 ## Repo layout
 
-In this repository are several examples that compliment the workshop. There are 
+In this repository are several examples that compliment the workshop. There are
 three major areas:
 
-* Hello, Hardware World
-* Information Radiators
-* Physical Sensors
+* [Hello, Hardware World](1_hello_world/README.md)
+* [Information Radiators](2_info_radiator/README.md)
+* [Physical Sensors](3_sensors/README.md)
 
-Each of these folders contains sections underneath them specific to the 
+Each of these folders contains sections underneath them specific to the
 example being used as illustrated below;
 
 ```
 |--- 1_hello_world
-|  
+|
 |--- 2_info_radiator
 |  |--- twitter
 |  |--- gmail
@@ -87,6 +96,5 @@ you can then run the appropriate example code as indicated in the `README`
 * Get more API details about [johnny five](http://johnny-five.io)
 * Discover more about electronics via [Node ARDX](http://node-ardx.org)
 * If you got a Scientist Kit (the big one) [there is a dedicated repo](http://github.com/nodebotsau/scientist-kit)
-* Sign up to [NodeBots Nights](http://www.meetup.com/Melbourne-NodeBots-Nights/)
 
 
