@@ -1,5 +1,7 @@
 # Weather forecast light
 
+THIS VERSION IS CURRENTLY BROKEN BECAUSE BOM HAVE CHANGED THEIR DATA FORMATS
+
 This example shows you how to get weather data from a service and present
 the forecast temperature as a light ranging from red (hot) to green (nice) to
 blue (chilly).
@@ -21,13 +23,13 @@ coming up for the forecast that is relevant.
 
 Set up the circuit using the diagram below. Things to note:
 
-* the "long" leg is the cathode and should go to ground. 
-* If you look for the "flat" side of the LED head the pin on that side is the 
+* the "long" leg is the cathode and should go to ground.
+* If you look for the "flat" side of the LED head the pin on that side is the
 red one.
 
 ![](weather.png)
 
-The resistors on this circuit are Red, Red, Black, Black, Brown or Red, Red, 
+The resistors on this circuit are Red, Red, Black, Black, Brown or Red, Red,
 Brown, Gold.
 
 ## Running the application
@@ -42,7 +44,7 @@ node 2_info_radiator/weather/weather.js --state VIC --location MELBOURNE
 
 You should then get a value printed out on the command line and the LED
 should change to a red hue if it's warm (>25 °C),  Green if it's mild (15-25°C) or
-blue if it's chilly (<15°C). 
+blue if it's chilly (<15°C).
 
 ### Choosing a location
 

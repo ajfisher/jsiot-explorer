@@ -1,6 +1,6 @@
 # Gmail inbox volume
 
-This example shows you how full your email inbox is using a servo and the 
+This example shows you how full your email inbox is using a servo and the
 Gmail API.
 
 ## Components needed
@@ -16,9 +16,9 @@ Gmail API.
 
 Derived from this [quickstart guide](https://developers.google.com/gmail/api/quickstart/nodejs).
 
-You will need to register a Gmail API. TO do this, 
+You will need to register a Gmail API. To do this,
 [go to the Google  Developer's Console](https://console.developers.google.com/flows/enableapi?apiid=gmail)
-and register your app to get your various keys. 
+and register your app to get your various keys.
 
 * Select "Create New Project".
 * Choose OAuth and select "Create new client ID"
@@ -34,9 +34,9 @@ of installed application
 
 The circuit is given below. Things to note:
 
-* Servo brown wire = GND
+* Servo brown/black wire = GND
 * Servo red wire = 5V
-* Servo yellow / orange wire is signal (pin 9)
+* Servo yellow / orange / white wire is signal (pin 9)
 
 ![](gmail.png)
 

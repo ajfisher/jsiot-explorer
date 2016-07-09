@@ -9,7 +9,7 @@ var p_streamd;
 var board = new five.Board();
 var temperature;
 
-// This is a custom temperature controller for the chip we're using as 
+// This is a custom temperature controller for the chip we're using as
 // it hasn't made it into Johnny-Five quite yet.
 var LM335_controller = {
     initialize: {
@@ -38,7 +38,7 @@ board.on("ready", function() {
         freq: 10000  // log every 10 seconds
     });
 
-    temperature.on("data", function(err, data) {
+    temperature.on("data", function(data) {
         console.log(data.celsius + "°C " + data.kelvin + "°K");
         // log the data to phant
         phant.add(p_streamd, {

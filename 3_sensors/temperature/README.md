@@ -1,7 +1,7 @@
 # Temperature sensor
 
-In this example we'll use [Phant](http://phant.io) to log data from a temperature 
-sensor. Phant is an open source data acquistion and logging platform designed 
+In this example we'll use [Phant](http://phant.io) to log data from a temperature
+sensor. Phant is an open source data acquistion and logging platform designed
 and built by sparkfun. It's a good tool for being able to store data locally
 from sensors.
 
@@ -23,7 +23,7 @@ window and run (Assumes your node_modules is in your execution path):
 phant
 ```
 
-Phant will now be running on both a telnet port (8081) and http port (8080) 
+Phant will now be running on both a telnet port (8081) and http port (8080)
 by defualt.
 
 Go to http://localhost:8080 and select "Create a Data Stream"
@@ -34,7 +34,7 @@ You'll then get a screen with all of your pertinent information. Keep this to
 hand but also save your keys file as `3_sensors/temperature/access_keys.json`.
 
 Once this is complete, you can build the circuit and then start pushing data
-to Phant. 
+to Phant.
 
 Make sure you leave phant running while you're acquiring data!
 

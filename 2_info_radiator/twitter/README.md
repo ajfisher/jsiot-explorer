@@ -18,7 +18,7 @@ To use the twitter API you will need to register your application and authentica
 it against your user account. You can do this in the following steps:
 
 * Log into to twitter and [create a new application](https://apps.twitter.com/app/new)
-* Enter in the details (website can be `http://127.0.0.1/` and leave callback URL empty). 
+* Enter in the details (website can be `http://127.0.0.1/` and leave callback URL empty).
 Agree to the terms and conditions.
 * Go to permissions and make your application read only
 

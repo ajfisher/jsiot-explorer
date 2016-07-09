@@ -25,7 +25,7 @@ var io = require('socket.io').listen(server);
 io.sockets.on("connection", function(socket) {
 
     if (board.isReady) {
-        lightsensor.on("data", function(err, value) {
+        lightsensor.on("data", function(value) {
             var dp = [{
                 time: (new Date()).getTime() / 1000,
                 y: value,
@@ -38,7 +38,7 @@ io.sockets.on("connection", function(socket) {
 
 board = new five.Board();
 board.on("ready", function() {
-    
+
     lightsensor = new five.Sensor({
         pin: "A0",
         freq: 1000,
