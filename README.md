@@ -44,7 +44,10 @@ npm install
 ```
 
 If you're on Mac or Windows, you'll need to install the drivers for the arduino
-board. [They are in the drivers folder](/drivers).
+board. [They are in the drivers folder](/drivers). On Mac you may get a prompt
+about opening up the CodeBender site at one point. You can safely ignore this,
+however in the future if you're interested in programming and managing devices
+from a browser, the [CodeBender](http://codebender.cc) project is really interesting.
 
 If you're on Linux, you don't need to do anything - the kernel drivers are already
 there if you're using any kernal from the last several years.
